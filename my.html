@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="assets/logo-removebg-preview.png">
+<link rel="stylesheet" href="CSS/pagination.css">
+<link rel="stylesheet" href="CSS/my.css">
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="assets/myVideo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h3>"Video Play/Pause using button"</h3>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+
+
+  <div class="pagination">
+    <a href="index.html"><</a>
+    <a href="index.html" >1</a>
+    <a href="my.html" class="active">2</a>
+    <a href="table.html">3</a>
+    <a href="CC.html">4</a>
+    <a href="table.html">></a>
+  </div>
+</div>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
