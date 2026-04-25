@@ -1,0 +1,24 @@
+html { color-scheme: dark;}
+
+body {
+  color: #eee;
+  font-size: 1.125rem;
+  font-family: arial;
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: min(900px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+
+tr:hover{background-color: aquamarine, color=""}
